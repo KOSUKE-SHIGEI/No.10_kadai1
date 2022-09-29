@@ -17,55 +17,55 @@
       <form action="mailto:esample@gmail.com" enctype="text/plain" method="POST">
         <div class="form_wrapper">
           <div class="field-item">
-            <div class="field">
+            <label class="field" for="fullname">
               <p>お名前</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <input type="text" name="漢字" placeholder="例)　山田太郎" autofocus required />
+              <input type="text" name="fullname" id="fullname" placeholder="例)　山田太郎" autofocus required />
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field" for="reading">
               <p>ふりがな</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <input type="text" name="ふりがな" placeholder="例)　やまだたろう" required />
+              <input type="text" name="ふりがな" id="reading" placeholder="例)　やまだたろう" required />
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field" for="mail">
               <p>メールアドレス</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <input type="text" name="mail" placeholder="例)　guest@example.com" required />
+              <input type="text" name="mail" id="mail" placeholder="例)　guest@example.com" required />
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field" for="tel">
               <p>電話番号</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <input type="text" name="mail" placeholder="例)　090-1234-5678" required />
+              <input type="text" name="tel" id="tel" placeholder="例)　090-1234-5678" required />
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field" for="date">
               <p>生年月日</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <input type="text" placeholder="年/月/日" onfocus="type='date'" onfocusout="type='text'" required />
+              <input type="date" name="date" id="date" value="2001/01/01" required />
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field">
               <p>性別</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="sex-select">
               <label for="man"><input type="radio" name="sex" id="man" required />男性</label>
 
@@ -73,13 +73,13 @@
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field" id="select">
               <p>お問い合わせ項目</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <select required>
-                <option value="0" disabled selected>選択してください</option>
+              <select required name="select" id="select">
+                <option value="" selected>選択してください</option>
                 <option value="1">ご依頼</option>
                 <option value="2">質問</option>
                 <option value="3">その他</option>
@@ -87,12 +87,12 @@
             </div>
           </div>
           <div class="field-item">
-            <div class="field">
+            <label class="field" for="body">
               <p>お問い合わせ内容</p>
               <div class="required">必須</div>
-            </div>
+            </label>
             <div class="item">
-              <textarea required placeholder="お問い合わせ内容を入力" rows="5"> </textarea>
+              <textarea required placeholder="お問い合わせ内容を入力" name="body" id="body" rows="5"> </textarea>
             </div>
           </div>
         </div>

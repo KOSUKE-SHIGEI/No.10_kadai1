@@ -61,9 +61,8 @@ form {
 
 @media screen and (max-width: 370px) {
   .field-item {
-    width: 100%;
-    display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -72,6 +71,7 @@ form {
   margin-left: 0;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   width: 10%;
   flex-basis: 40%;
   font-weight: bold;
@@ -79,13 +79,8 @@ form {
 
 @media screen and (max-width: 370px) {
   .field {
-    display: flex;
-    margin-left: 0;
     flex-direction: row;
-    width: auto;
     justify-content: flex-start;
-    align-items: center;
-    font-weight: bold;
     gap: 10px;
   }
 }
@@ -102,7 +97,6 @@ div {
 .item input {
   width: 100%;
   margin: 0;
-
   font-size: 1em;
   padding: 10px;
   box-sizing: border-box;
@@ -117,10 +111,6 @@ div {
   font-size: 0.8em;
   background-color: rgb(255, 0, 179);
   color: #fff;
-}
-
-input #man {
-  display: inline;
 }
 
 .sex-select {
@@ -146,6 +136,18 @@ select {
   border-radius: 5px;
 }
 
+select:invalid {
+  color: #bbb;
+}
+
+select option {
+  color: black;
+}
+
+select option:nth-child(1) {
+  color: #bbb;
+}
+
 textarea {
   width: 100%;
   margin: 0;
@@ -160,7 +162,7 @@ textarea {
 
 .submit {
   text-align: center;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 button {
